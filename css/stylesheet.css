@@ -12,14 +12,12 @@ body{
 }
 header{
     position: relative;
-    border-bottom: 4px gray;
     background-color: rgb(3, 72, 84);
     opacity: 0.75;
     width:100%;
 }
 main{
     margin:0 1.2em;
-    font-size: 0.75em;
     line-height:1;
 }
 footer{
@@ -179,7 +177,9 @@ main address{
     footer{
         font-size: 1em;
     }
-    
+    h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     main address ul li{
         list-style: none;
         margin-bottom: 0.5em;
