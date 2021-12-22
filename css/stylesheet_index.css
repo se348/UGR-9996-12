@@ -65,11 +65,11 @@ button:hover{
     width:100%;
 }
 .indexsec__p__a{
-    color:rgb(218, 127, 9);
+    color:rgb(0, 30, 9);
     text-decoration: none;
 }
 .indexsec__p__a:visited{
-    color:rgb(221, 150, 63) ;
+    color:rgb(255, 0, 0) ;
 }
 .indexsec__p__a:hover, .indexsec__p__a:focus{
     color:rgba(189, 142, 84, 0.897);
@@ -81,7 +81,10 @@ button:hover{
     }    
 }
 @media screen and (min-width: 750px){
-    
+ .indexsec__p__a{
+    color:rgb(255, 225, 240);
+    text-decoration: none;
+}   
 }
 @media screen and (min-width: 1000px){
     #intro,#intro2, #floated{
