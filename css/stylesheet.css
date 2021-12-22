@@ -19,6 +19,7 @@ header{
 main{
     margin:0 1.2em;
     line-height:1;
+    font-size: 1em;
 }
 footer{
     position: relative;
