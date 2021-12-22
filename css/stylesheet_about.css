@@ -18,7 +18,6 @@ th{
     border: 1.8px solid;
     font-weight: 600;
     padding: 0.5em;
-    background-color: #5e3040;
 }
 dt{
     font-weight: 600;
@@ -31,3 +30,9 @@ dt{
         margin-right: auto;
     }
 }
+@media screen and (min-width:750px){
+    th{
+        background-color: #5e3040;
+    }
+}
+
