@@ -1,0 +1,35 @@
+.main__secimg{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.past{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+.past__fig{
+    flex:0 0 90%;
+    padding:1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.past__figcaption{
+    text-align: center;
+    width:80%
+}
+.past__img{
+    width:95%;
+}
+@media screen and (min-width:750px) {
+    main{
+        margin:0 20%;
+    }
+    .past__fig{
+        flex:0 0 30%;
+    }
+    .past__img{
+        height:250px;
+    }
+}

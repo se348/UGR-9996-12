@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font: Arial, sans-serif;
+}
+body{
+    display: grid;
+    grid-template-rows: 90px 1fr max-content;
+    min-width: 250px;
+}
+header{
+    position: relative;
+    border-bottom: 4px gray;
+    background-color: rgb(3, 72, 84);
+    opacity: 0.75;
+    width:100%;
+}
+main{
+    margin:0 1.2em;
+    font-size: 0.75em;
+    line-height:1;
+}
+footer{
+    position: relative;
+    font-size: 0.75em;
+    background-color:rgb(3, 72, 84);
+    width: 100%;
+    color: white;
+    opacity: 0.75;
+}
+p{
+    text-indent: 2em;
+    margin-bottom: 0.25em;
+}
+h1{
+    text-align: center;
+    margin: 1em 0;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid;
+    font-size: 3em;
+    font-family:'Baskerville Old Face';
+}
+nav>ul{
+    display: flex;
+    width:100%;
+    justify-content: center;    
+    position: absolute;
+    bottom: 0;
+}
+#contact{
+    padding-right: 1em;
+}
+nav li{
+    list-style-type: none;
+    position: relative;
+    padding: 0.5em;
+}
+nav ul li a{
+    text-decoration: none;
+    flex:1 1 25%;
+    font-size: 0.75em;
+    color: white;  
+}
+nav li ul{
+    display: none;
+}
+nav li:hover ul, nav li:focus ul{
+    position: absolute;
+    top: 0;
+    display: flex;
+    margin-top: 1.9em;
+    margin-left:-8px;
+    flex-direction: column;
+    overflow: visible;
+    z-index: 10;
+    width: 100%;
+}
+nav li{
+    background-color: rgb(3, 72, 84);
+}
+h2{
+    margin: 0.25em 0;
+}
+nav li:hover #servicesub li, nav li:focus #servicesub li{
+    flex:0 0 33%;
+    display:block;
+    padding: 1em 0;
+    background-color: rgb(3, 72, 84);
+    font-size: 1em;
+    border-bottom: 1px white solid; 
+}
+nav li:hover, nav li:focus{
+    background-color: #3c7480; 
+ }
+ nav li:hover #servicesub li:hover, nav li:focus #servicesub li:focus{
+    background-color: #3c7480;
+ }
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 0.25em;
+}
+nav img{
+    height:20px;
+    width: 20px;
+    margin-bottom: 2em;
+    border-radius: 50%;
+}
+footer div{
+    position: absolute;
+    bottom: 0px;
+    right:0;
+}
+footer div li{
+    list-style: none;
+    margin:0 1px;
+    display: inline-block;
+}
+footer div img{
+    width: 30px;
+    border-radius: 8px;
+}
+footer div li a img{
+    border:#3c7480 solid;
+}
+footer div li a:hover img,footer div li a:focus img{
+    border: #00202b solid;
+}
+main address{
+    display: none;
+}
+#git{
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 350px) {
+    nav img{
+        height:40px;
+        width: 40px;
+        margin-bottom: 0;
+    }
+    nav i{
+        padding-right: 5px;
+    }
+    nav>ul>li{
+        margin-right:0.5em;
+    }
+}
+
+@media screen and (min-width: 750px){
+    body{
+        color: white;
+        background-image: url(../images/bg.png);
+        background-color: black;
+        background-repeat: repeat;
+    }
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    main{
+        position: relative;
+        padding:2em;
+        font-size: 1em;
+        margin:0 20%;
+    }
+    main address{
+        display: block;
+        position: fixed;
+        right:20px;
+        top: 35%;
+    }
+    main address img{
+        width: 40px;
+        border-radius: 8px ;
+        opacity: .5;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+    footer{
+        font-size: 1em;
+    }
+    
+    main address ul li{
+        list-style: none;
+        margin-bottom: 0.5em;
+    }
+    nav i{
+        padding-right: 5px;
+    }
+    main address li a:hover img,main address li a:focus img{
+        opacity: 1;
+    }
+    nav img{
+        height:80px;
+        width: 80px;
+        margin-bottom: 0;
+    }
+    nav>ul{
+        justify-content: flex-end;
+        right:16px;
+    }
+    nav>ul>li>a{
+        padding: 0 0.5em;
+    }
+    footer div{
+        right:10px;
+    } 
+}
